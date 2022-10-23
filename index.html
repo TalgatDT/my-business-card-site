@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="" content="">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+
+  <body class="body">
+
+    <header class="header"  id="home">
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="nav__link" href="#home">
+                Home
+              </a> 
+            </li>
+            <li class="header__item">
+              <a class="nav__link" href="#about-me">
+                About me
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="nav__link" href="#skills">
+                Skills
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="nav__link" href="#portfolio">
+                Portfolio
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="nav__link" href="#footer">
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="hero"  id="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Talgat Turganov
+          </h1>
+          <p class="hero__me">
+            Frontend-developer, 35 years old, Omsk, Russia
+          </p>
+          <p class="hero__lang">
+            <a class="lang__link" href="index-ru.html">Ru</a> 
+            / 
+            <a class="lang__link" href="index.html">Eng</a>
+            <!-- Ru/Eng -->
+          </p>
+        </div>
+        <div class="hero__img">
+          <!-- <img class="hero_pictures" src="img/hero-bg.jpg" alt="favorit picture"> -->
+        </div>
+      </div>
+      
+    </section>
+    
+    <section class="about-me  about-me_flexbox"  id="about-me">
+      <div class="container">
+        <h2 class="title  about-me__title">
+          About Me
+        </h2>
+        <div class="about-me__container">
+          <p class="about-me__box">
+            Hello, I'm Talgat - Front-end developer from Omsk.
+            I am interested in website development and everything connected with them.
+          </p>
+          <p class="about-me__box">
+            I am a student of "Frontend-developer PRO" courses at Skillbox Academy.
+          </p>
+          <p class="about-me__box">
+            Ready to bring your projects to life.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="skills"  id="skills">
+      <div class="container">
+        <h2 class="title  skills__title">
+          Skills
+        </h2>
+        <p class="skills__text">
+          I have knowledge in the following areas.
+        </p>
+        <ul class="skills__list">
+          <li class="skills__item">
+            <div class="skills__icon">
+              <img class="icon-size" src="img/html5.png" alt="icon html">
+            </div>
+            <div class="skills__name">HTML 5</div>
+            <div class="skills-stars">
+              <img src="img/star-black.png" alt="star">
+              <img src="img/star-black.png" alt="star">
+              <img src="img/star-black.png" alt="star">
+              <img src="img/star-black.png" alt="star">
+              <img src="img/star-grey.png" alt="star">
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__icon">
+              <img class="icon-size" src="img/css3.png" alt="icon css">
+            </div>
+            <div class="skills__name">CSS 3</div>
+            <div class="skills-stars">
+              <img src="img/star-black.png" alt="star">
+              <img src="img/star-black.png" alt="star">
+              <img src="img/star-black.png" alt="star">
+              <img src="img/star-grey.png" alt="star">
+              <img src="img/star-grey.png" alt="star">
+            </div>
+          </li>
+          <li class="skills__item">
+            <div class="skills__icon">
+              <img class="icon-size" src="img/js.png" alt="icon JS">
+            </div>
+            <div class="skills__name">JavaScript</div>
+            <div class="skills-stars">
+              <img src="img/star-black.png" alt="star">
+              <img src="img/star-black.png" alt="star">
+              <img src="img/star-grey.png" alt="star">
+              <img src="img/star-grey.png" alt="star">
+              <img src="img/star-grey.png" alt="star">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="portfolio"  id="portfolio">
+      <!-- портфолио нужно сделать слаййдером -->
+      <div class="container">
+        <h2 class="title  portfolio__title">
+          Protfolio
+        </h2>
+        <div class="portfolio__site  site_123">
+          <img class="site-img" src="img/Слой8.jpg" alt="site">
+          <a class="portfolio__link" href="#">Company website "Company or website name"</a>
+        </div>
+        <div class="portfolio__site  site_123">
+          <img class="site-img" src="img/reebok_web.jpg" alt="site">
+          <a class="portfolio__link" href="#">Company website "Company or website name"</a>
+        </div>
+        <div class="portfolio__site  site_123">
+          <img class="site-img" src="img/Слой12.jpg" alt="site">
+          <a class="portfolio__link" href="#">Company website "Company or website name"</a>
+        </div>
+      </div>
+
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    
+    <footer class="footer  footer_flexbox"  id="footer">
+      <div class="container  footer__container">
+        <h2 class="footer__title">
+          Contacts
+        </h2>
+        <p class="footer__text">
+          Want to know more or just chat? You are welcome!
+        </p>
+        <button class="footer__btn" type="submit">
+          Send message
+        </button>
+        <div class="footer__social-link">
+          <a class="social-link  social__fb"  href="">
+            <img class="footer__social-icon" src="img/fb.png" alt="icon">
+          </a>
+          <a class="social-link  social__vk"  href="">
+            <img class="footer__social-icon" src="img/vk.png" alt="icon">
+          </a>
+          <a class="social-link  social__twitter"  href="">
+            <img class="footer__social-icon" src="img/twitter.png" alt="icon">
+          </a>
+          <a class="social-link  social__inst"  href="">
+            <img class="footer__social-icon" src="img/inst.png" alt="icon">
+          </a>
+        </div>
+        <p class="footer__text  subtext">
+          Like me on <br> Facebook, VK, Twitter, Instagram
+        </p>
+      </div>
+    </footer>
+    <script src="js/swiper.js"></script>
+  </body>
+</html>
