@@ -112,7 +112,7 @@ h2 {
 
 /* hero */
 .hero {
-  margin-bottom: 224px;
+  margin-bottom: 214px;
   height: 540px;
   background-color: var(--color-white);
 }
@@ -167,9 +167,11 @@ h2 {
 }
 
 .hero__img {
+  margin: 0 auto;
   max-width: 944px;
-  height: 387px;
-  background-image: url(../img/hero-bg.jpg);
+  height: 397px;
+  background-color: lightgray;
+  background-image: url(../img/010.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
