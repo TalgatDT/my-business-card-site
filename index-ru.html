@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <!-- script for swiper -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script defer src="js/main.js"></script>
   </head>
 
   <body class="body">
-
     <header class="header"  id="home">
       <div class="container">
         <nav class="header__nav">
@@ -67,18 +70,7 @@
         <div class="hero__img">
           <!-- <img class="hero_pictures" src="img/001.jpg" alt="favorit picture"> -->
         </div>
-
-        <div class="swiper-container  slider">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide slide slide-1"></div>
-            <div class="swiper-slide slide slide-2"></div>
-            <div class="swiper-slide slide slide-3"></div>
-          </div> <!-- /swiper-wrapper -->
-        </div> <!--/swiper-container  slider -->
       </div>
-      
     </section>
     
     <section class="about-me  about-me_flexbox"  id="about-me">
@@ -112,7 +104,7 @@
         <ul class="skills__list">
           <li class="skills__item">
             <div class="skills__icon">
-              <img class="icon-size" src="img/html5.jpg" alt="icon html">
+              <img class="icon-size" src="img/HTML.jpg" alt="icon html">
             </div>
             <div class="skills__name">HTML 5</div>
             <div class="skills-stars">
@@ -125,7 +117,7 @@
           </li>
           <li class="skills__item">
             <div class="skills__icon">
-              <img class="icon-size" src="img/css3.jpg" alt="icon css">
+              <img class="icon-size" src="img/CSS.png" alt="icon css">
             </div>
             <div class="skills__name">CSS 3</div>
             <div class="skills-stars">
@@ -138,7 +130,7 @@
           </li>
           <li class="skills__item">
             <div class="skills__icon">
-              <img class="icon-size" src="img/js.jpg" alt="icon JS">
+              <img class="icon-size" src="img/JSc.png" alt="icon JS">
             </div>
             <div class="skills__name">JavaScript</div>
             <div class="skills-stars">
@@ -163,25 +155,29 @@
             <!-- Это сами слайды -->
             <div class="portfolio-slide  active">
               <figure>
-                <img class="site-img" src="img/Слой8.jpg" alt="site">
+                <img class="site-img" src="img/screen-portfolio/Слой8.jpg" alt="site">
                 <figcaption><a class="portfolio__link" href="#">Сайт компании или название</a></figcaption>
               </figure>				
             </div>
             <div class="portfolio-slide">
               <figure>
-                <img class="site-img" src="img/reebok_web.jpg" alt="site">
+                <img class="site-img" src="img/screen-portfolio/reebok_web.jpg" alt="site">
                 <figcaption><a class="portfolio__link" href="#">Сайт компании или название</a></figcaption>
               </figure>
             </div>
             <div class="portfolio-slide">
               <figure>
-                <img class="site-img" src="img/Слой12.jpg" alt="site">
+                <img class="site-img" src="img/screen-portfolio/Слой12.jpg" alt="site">
                 <figcaption><a class="portfolio__link" href="#">Сайт компании или название</a></figcaption>
               </figure>
             </div>
             <!-- Это кнопки вперед-назад -->
-            <div id="portfolio-btn-prev"><img src="img/svg/portfolio-btn-prev.svg" alt="Кнопка назад"></div>
-            <div id="portfolio-btn-next"><img src="img/svg/portfolio-btn-next.svg" alt="Кнопка вперёд"></div>
+            <div id="portfolio-btn-prev">
+              <!-- <img src="img/svg/portfolio-btn-prev.svg" alt="Кнопка назад"> -->
+            </div>
+            <div id="portfolio-btn-next">
+              <!-- <img src="img/svg/portfolio-btn-next.svg" alt="Кнопка вперёд"> -->
+            </div>
           </div>
         </div>
       </div>

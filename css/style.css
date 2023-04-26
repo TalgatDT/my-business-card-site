@@ -280,17 +280,12 @@ h2 {
   margin-bottom: 25px;
   width: 110px;
   height: 110px;
-  background-color: var(--color-grey);
+  background-color: var(--color-grey)r;
   object-fit: contain;
 }
 
-.skills__icon_html {
-  background-image: url(img/html5.png);
-}
-
 .icon-size {
-  max-width: 88px;
-  max-height: 105px;
+  height: 100%;
 }
 
 .skills__name {
