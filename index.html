@@ -3,15 +3,17 @@
   
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
+    <!-- script for swiper -->
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script defer src="js/main.js"></script>
   </head>
 
   <body class="body">
@@ -57,7 +59,7 @@
             Talgat Turganov
           </h1>
           <p class="hero__me">
-            Frontend-developer, 35 years old, Omsk, Russia
+            Frontend-developer, 36 years old, Omsk, Russia
           </p>
           <p class="hero__lang">
             <a class="lang__link" href="index-ru.html">Ru</a> 
@@ -67,7 +69,7 @@
           </p>
         </div>
         <div class="hero__img">
-          <!-- <img class="hero_pictures" src="img/hero-bg.jpg" alt="favorit picture"> -->
+          <!-- <img class="hero_pictures" src="img/001.jpg" alt="favorit picture"> -->
         </div>
       </div>
       
@@ -149,41 +151,34 @@
       <!-- портфолио нужно сделать слаййдером -->
       <div class="container">
         <h2 class="title  portfolio__title">
-          Protfolio
+          Portfolio
         </h2>
-        <div class="portfolio__site  site_123">
-          <img class="site-img" src="img/Слой8.jpg" alt="site">
-          <a class="portfolio__link" href="#">Company website "Company or website name"</a>
+        <div class="portfolio-flex-wrapper">
+          <div class="portfolio-slider-wrapper">
+            <!-- Это сами слайды -->
+            <div class="portfolio-slide  active">
+              <figure>
+                <img class="site-img" src="img/Слой8.jpg" alt="site">
+                <figcaption><a class="portfolio__link" href="#">Company website "Company or website name"</a></figcaption>
+              </figure>				
+            </div>
+            <div class="portfolio-slide">
+              <figure>
+                <img class="site-img" src="img/reebok_web.jpg" alt="site">
+                <figcaption><a class="portfolio__link" href="#">Company website "Company or website name"</a></figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-slide">
+              <figure>
+                <img class="site-img" src="img/Слой12.jpg" alt="site">
+                <figcaption><a class="portfolio__link" href="#">Company website "Company or website name"</a></figcaption>
+              </figure>
+            </div>
+            <!-- Это кнопки вперед-назад -->
+            <div id="portfolio-btn-prev"><img src="img/svg/portfolio-btn-prev.svg" alt="Кнопка назад"></div>
+            <div id="portfolio-btn-next"><img src="img/svg/portfolio-btn-next.svg" alt="Кнопка вперёд"></div>
+          </div>
         </div>
-        <div class="portfolio__site  site_123">
-          <img class="site-img" src="img/reebok_web.jpg" alt="site">
-          <a class="portfolio__link" href="#">Company website "Company or website name"</a>
-        </div>
-        <div class="portfolio__site  site_123">
-          <img class="site-img" src="img/Слой12.jpg" alt="site">
-          <a class="portfolio__link" href="#">Company website "Company or website name"</a>
-        </div>
-      </div>
-
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
     </section>
     
