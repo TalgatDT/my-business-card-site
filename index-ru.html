@@ -3,10 +3,8 @@
   
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -57,7 +55,7 @@
             Талгат Турганов
           </h1>
           <p class="hero__me">
-            Фронтенд-разработчик, 35 лет, Омск, Россия
+            Фронтенд-разработчик, 36 лет, Омск, Россия
           </p>
           <p class="hero__lang">
             <a class="lang__link" href="index-ru.html">Ru</a> 
@@ -67,8 +65,18 @@
           </p>
         </div>
         <div class="hero__img">
-          <!-- <img class="hero_pictures" src="img/Group-2.1.jpg" alt="favorit picture" /> -->
+          <!-- <img class="hero_pictures" src="img/001.jpg" alt="favorit picture"> -->
         </div>
+
+        <div class="swiper-container  slider">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide slide slide-1"></div>
+            <div class="swiper-slide slide slide-2"></div>
+            <div class="swiper-slide slide slide-3"></div>
+          </div> <!-- /swiper-wrapper -->
+        </div> <!--/swiper-container  slider -->
       </div>
       
     </section>
@@ -150,17 +158,31 @@
         <h2 class="title  portfolio__title">
           Портфолио
         </h2>
-        <div class="portfolio__site  site_123">
-          <img class="site-img" src="img/Слой8.jpg" alt="site">
-          <a class="portfolio__link" href="#">Сайт компании "Название компании или сайта"</a>
-        </div>
-        <div class="portfolio__site  site_123">
-          <img class="site-img" src="img/reebok_web.jpg" alt="site">
-          <a class="portfolio__link" href="#">Сайт компании "Название компании или сайта"</a>
-        </div>
-        <div class="portfolio__site  site_123">
-          <img class="site-img" src="img/Слой12.jpg" alt="site">
-          <a class="portfolio__link" href="#">Сайт компании "Название компании или сайта"</a>
+        <div class="portfolio-flex-wrapper">
+          <div class="portfolio-slider-wrapper">
+            <!-- Это сами слайды -->
+            <div class="portfolio-slide  active">
+              <figure>
+                <img class="site-img" src="img/Слой8.jpg" alt="site">
+                <figcaption><a class="portfolio__link" href="#">Сайт компании или название</a></figcaption>
+              </figure>				
+            </div>
+            <div class="portfolio-slide">
+              <figure>
+                <img class="site-img" src="img/reebok_web.jpg" alt="site">
+                <figcaption><a class="portfolio__link" href="#">Сайт компании или название</a></figcaption>
+              </figure>
+            </div>
+            <div class="portfolio-slide">
+              <figure>
+                <img class="site-img" src="img/Слой12.jpg" alt="site">
+                <figcaption><a class="portfolio__link" href="#">Сайт компании или название</a></figcaption>
+              </figure>
+            </div>
+            <!-- Это кнопки вперед-назад -->
+            <div id="portfolio-btn-prev"><img src="img/svg/portfolio-btn-prev.svg" alt="Кнопка назад"></div>
+            <div id="portfolio-btn-next"><img src="img/svg/portfolio-btn-next.svg" alt="Кнопка вперёд"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -196,5 +218,6 @@
       </div>
     </footer>
     
+    <script src="js/swiper.js"></script>
   </body>
 </html>
