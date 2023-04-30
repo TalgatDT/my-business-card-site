@@ -116,7 +116,6 @@ h2 {
   color: var(--color-black);
 }
 
-
 /* hero */
 .hero {
   margin-bottom: 214px;
@@ -163,6 +162,7 @@ h2 {
 .lang__link:hover {
   cursor: pointer;
   color: var(--color-black);
+  border-bottom: 2px solid var(--color-black);
   transition: color .3s ease-in-out;
 }
 
@@ -215,7 +215,6 @@ h2 {
 }
 /* /swiper */
 
-
 /* about-me */
 .about-me {
   padding-top: 98px;
@@ -244,7 +243,6 @@ h2 {
   text-align: center;
   color: var(--color-black);
 }
-
 
 /* skills */
 .skills {
